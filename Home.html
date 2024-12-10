@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="home.css">
+    
+    <title>OnClick</title>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+        <h1><a href="Home.html">OnClick</a></h1>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="#contact" id="contactUsBtn">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('contactModal')">&times;</span>
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you! Please fill out the form below and we'll get back to you as soon as possible.</p>
+
+      <!-- Contact Form -->
+      <form id="contactForm">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="4" required placeholder="Write your message here"></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+      </form>
+  </div>
+</div>
+
+<div class="welcome-message">
+  <h1>
+    <span>Your Front Row Seat to Unforgettable Concerts</span> 
+    <br> 
+    <small>Book Your Next Show with OnClick!</small>
+  </h1>
+</div>
+
+<div class="carousel">
+  <h1>Featured Shows</h1>
+  <div class="carousel-images">
+    <img src="img/Aurora2025EventPoster (1).jpg" alt="Aurora">
+    <img src="img/CHEN_303x430 (1).png" alt="Chen">
+    <img src="img/GrandBini2024WebPoster (1).jpg" alt="GrandBIni">
+    <img src="img/INCOGNITO_303x430 (1).jpg" alt="Incognito">
+    <img src="img/LOVER_303X430 (1).jpg" alt="Lover">
+    <img src="img/MSO_EVENT POSTER_303x430 (1).jpg" alt="MSO_EVENT">
+    <img src="img/RAGASA_303X430 (1).jpg" alt="Ragasa">
+    <img src="img/Taemin2024WebPoster (1).jpg" alt="Taemin">
+    <img src="img/TheCorrs2024WebPoster (1).jpg" alt="TheCorrs">
+  </div>
+  <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+  <button class="next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+
+<div class="Browse"> 
+  <div> <h1>
+    <span>Explore Exciting Events!</span> 
+  </h1>
+  <br><br>
+  <p>Discover a world of exciting events just a click away. Browse through a curated selection of upcoming activities, from concerts and festivals to workshops and local gatherings. Your next adventure is just around the corner—explore, find what sparks your interest, and get your tickets today!</p>
+  <br> <br>
+  <a href="Events.html" class="btn-browse-events">Click Here To Browse</a> 
+  <br>
+</div>
+</div>
+
+<div id="featuresModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('featuresModal')">&times;</span>
+    <h2>OnClick Features</h2>
+    <p>OnClick offers a range of features to enhance your concert booking experience:</p>
+    <ul>
+      <li><strong>Easy Event Booking:</strong> Browse upcoming concerts, select your event, and book your tickets instantly.</li>
+      <li><strong>Real-Time Availability:</strong> Check seat availability and get instant confirmation of your bookings.</li>
+      <li><strong>Personalized Event Recommendations:</strong> Get personalized event suggestions based on your preferences and past bookings.</li>
+      <li><strong>Secure Payment Options:</strong> Pay through various methods like credit cards, PayPal, and more.</li>
+      <li><strong>Exclusive Offers:</strong> Access special deals and discounts for members.</li>
+      <li><strong>Event Reminders:</strong> Receive notifications and reminders about your booked events.</li>
+    </ul>
+  </div>
+</div>
+
+<div id="faqsModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('faqsModal')">&times;</span>
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <h3>1. How can I book tickets?</h3>
+      <p>To book tickets, simply visit our Events page, select your desired event, and click the "Book Tickets" button. You'll be able to choose the number of tickets and seat categories.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>2. What payment methods are available?</h3>
+      <p>We accept various payment methods, including credit cards and PayPal.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>3. Can I cancel my booking?</h3>
+      <p>Unfortunately, once a booking is confirmed, cancellations are not possible. Please make sure to double-check your booking details before confirming.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>4. Are there any age restrictions for the events?</h3>
+      <p>Age restrictions depend on the event and the venue. Please check the event details for any age-related guidelines.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>5. What happens if I miss my event?</h3>
+      <p>We do not offer refunds for missed events. Please ensure you arrive on time for your booked events to avoid any inconvenience.</p>
+    </div>
+  </div>
+</div>
+
+<div id="pricingModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('pricingModal')">&times;</span>
+    <h2>Pricing Plans</h2>
+    <p>We offer various pricing plans to suit your needs. Choose the one that fits your requirements:</p>
+    
+    <div class="pricing-plans">
+      <div class="plan">
+        <h3>Basic Plan</h3>
+        <p>For individuals who need occasional access to our services.</p>
+        <p><strong>Price:</strong> Php199.99/month</p>
+        <button class="btn">Subscribe</button>
+      </div>
+      <div class="plan">
+        <h3>Professional Plan</h3>
+        <p>For businesses and professionals who need more access and features.</p>
+        <p><strong>Price:</strong> Php499.99/month</p>
+        <button class="btn">Subscribe</button>
+      </div>
+      <div class="plan">
+        <h3>Enterprise Plan</h3>
+        <p>For large companies and enterprises who need full access and customization options.</p>
+        <p><strong>Price:</strong> Php999.99/month</p>
+        <button class="btn">Subscribe</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div>
+      <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="#features" id="featuresFooterBtn">Features</a></li>
+          <li><a href="#faqs" id="faqsFooterBtn">FAQs</a></li> 
+          <li><a href="#pricing" id="pricingFooterBtn">Pricing</a></li>
+      </ul>
+  </div>
+</footer>
+
+  <script src="home.js"></script>
+</body>
+</html>

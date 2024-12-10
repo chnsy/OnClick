@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="about.css">
+    
+    <title>OnClick</title>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+        <h1><a href="Home.html">OnClick</a></h1>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="#contact" id="contactUsBtn">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('contactModal')">&times;</span>
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you! Please fill out the form below and we'll get back to you as soon as possible.</p>
+
+      <form id="contactForm">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="4" required placeholder="Write your message here"></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+      </form>
+  </div>
+</div>
+<div class="about" id="about">
+  <h1>About Us</h1>
+  
+  <section class="platform-info">
+    <h2>What is OnClick?</h2>
+    <p>
+      Welcome to <strong>OnClick</strong>, the premier platform for booking live concerts and unforgettable musical experiences. Whether you're a music lover looking for the hottest acts or a venue searching for the perfect performers, we make the booking process easy, seamless, and efficient.
+    </p>
+    <p>
+      Our mission is to connect talented artists with audiences around the world, providing a dynamic space where music lovers and event organizers can discover, book, and collaborate with their favorite performers. From intimate venues to large-scale festivals, we offer a diverse range of acts across all genres—ensuring that every event is a memorable one.
+    </p>
+    <p>
+      At OnClick, we believe in the power of music to unite people and create unforgettable experiences. Whether you're a concert-goer or an event organizer, we're here to help you make every performance a reality.
+    </p>
+  </section>
+
+  <section class="creators-info">
+    <h2>Meet the Creators</h2>
+    <p>
+      OnClick was founded by two passionate BSIT students, Chinsy and Lilian, who share a love for music and technology. They saw the need for a more efficient way to connect music lovers with live events. With Chinsy's background in event management and Lilain's expertise in software development, they teamed up to create an intuitive platform that makes booking live performances easy for both fans and event organizers.
+    </p>
+
+    <div class="creator-cards">
+      <div class="creator-card">
+        <h3>Chinsy L. Mejares</h3>
+        <p>UI Designer & Programmer</p>
+        <p>Chinsy is a BSIT student with a strong passion for both live music and technology. Her studies in Information Technology, combined with her love for the live music industry, sparked the idea for OnClick. As she continues to hone her technical skills, Chinsy is dedicated to using her knowledge to create a platform that connects performers with audiences in a seamless and innovative way.</p>
+      </div>
+      <div class="creator-card">
+        <h3>Lilian Cumba</h3>
+        <p>UI Designer & Programmer</p>
+        <p>Lilian is a BSIT student with a passion for software development and creating seamless digital experiences. Her technical skills drive the development of OnClick, where she focuses on building a smooth, user-friendly platform for discovering and booking live performances.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Join Us on Our Journey</h2>
+    <p>
+      Whether you're a music enthusiast looking to find your next great concert or an artist looking to connect with new audiences, we invite you to explore everything OnClick has to offer. Together, we can create memorable live music experiences and shape the future of live entertainment.
+    </p>
+    <a href="Events.html" class="btn">Browse Upcoming Events</a>
+  </section>
+</div>
+
+
+<div id="featuresModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('featuresModal')">&times;</span>
+    <h2>OnClick Features</h2>
+    <p>OnClick offers a range of features to enhance your concert booking experience:</p>
+    <ul>
+      <li><strong>Easy Event Booking:</strong> Browse upcoming concerts, select your event, and book your tickets instantly.</li>
+      <li><strong>Real-Time Availability:</strong> Check seat availability and get instant confirmation of your bookings.</li>
+      <li><strong>Personalized Event Recommendations:</strong> Get personalized event suggestions based on your preferences and past bookings.</li>
+      <li><strong>Secure Payment Options:</strong> Pay through various methods like credit cards, PayPal, and more.</li>
+      <li><strong>Exclusive Offers:</strong> Access special deals and discounts for members.</li>
+      <li><strong>Event Reminders:</strong> Receive notifications and reminders about your booked events.</li>
+    </ul>
+  </div>
+</div>
+
+<div id="faqsModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('faqsModal')">&times;</span>
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <h3>1. How can I book tickets?</h3>
+      <p>To book tickets, simply visit our Events page, select your desired event, and click the "Book Tickets" button. You'll be able to choose the number of tickets and seat categories.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>2. What payment methods are available?</h3>
+      <p>We accept various payment methods, including credit cards and PayPal.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>3. Can I cancel my booking?</h3>
+      <p>Unfortunately, once a booking is confirmed, cancellations are not possible. Please make sure to double-check your booking details before confirming.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>4. Are there any age restrictions for the events?</h3>
+      <p>Age restrictions depend on the event and the venue. Please check the event details for any age-related guidelines.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>5. What happens if I miss my event?</h3>
+      <p>We do not offer refunds for missed events. Please ensure you arrive on time for your booked events to avoid any inconvenience.</p>
+    </div>
+
+  </div>
+</div>
+
+<div id="pricingModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('pricingModal')">&times;</span>
+    <h2>Pricing Plans</h2>
+    <p>We offer various pricing plans to suit your needs. Choose the one that fits your requirements:</p>
+    
+    <div class="pricing-plans">
+      <div class="plan">
+        <h3>Basic Plan</h3>
+        <p>For individuals who need occasional access to our services.</p>
+        <p><strong>Price:</strong> Php199.99/month</p>
+        <button class="btn">Subscribe</button>
+      </div>
+      <div class="plan">
+        <h3>Professional Plan</h3>
+        <p>For businesses and professionals who need more access and features.</p>
+        <p><strong>Price:</strong> Php499.99/month</p>
+        <button class="btn">Subscribe</button>
+      </div>
+      <div class="plan">
+        <h3>Enterprise Plan</h3>
+        <p>For large companies and enterprises who need full access and customization options.</p>
+        <p><strong>Price:</strong> Php999.99/month</p>
+        <button class="btn">Subscribe</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div>
+      <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="#features" id="featuresFooterBtn">Features</a></li>
+          <li><a href="#faqs" id="faqsFooterBtn">FAQs</a></li> 
+          <li><a href="#pricing" id="pricingFooterBtn">Pricing</a></li>
+      </ul>
+  </div>
+</footer>
+<script src="about.js"></script>
+</body>
+</html>
